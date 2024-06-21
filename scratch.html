@@ -11,14 +11,32 @@
         }
         .image-gallery {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
             gap: 20px;
         }
         .image-gallery img {
-            max-width: 100%;
+            width: calc(33.33% - 20px);
             height: auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 560px;
+            margin-top: 20px;
+        }
+        .video-container img {
+            width: 100%;
+            cursor: pointer;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -63,7 +81,10 @@
         </section>
         <section id="video">
             <h2>Photography Video</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-container">
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Fake Thumbnail" id="thumbnail">
+                <iframe id="video-iframe" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none;"></iframe>
+            </div>
         </section>
         <section id="tableau">
             <h2>Tableau Visualization</h2>
@@ -101,5 +122,13 @@
     <footer>
         <p>&copy; 2024 Your Name</p>
     </footer>
+    <script>
+        document.getElementById('thumbnail').addEventListener('click', function() {
+            this.style.display = 'none';
+            var iframe = document.getElementById('video-iframe');
+            iframe.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
+            iframe.style.display = 'block';
+        });
+    </script>
 </body>
 </html>
