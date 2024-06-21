@@ -21,7 +21,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px; /* Increased space between main links */
+    margin: 0 20px; 
 }
 
 nav ul li a {
@@ -43,7 +43,7 @@ nav ul li a:hover {
 
 .section-links {
     text-align: center;
-    margin: 10px 0; /* Position the links in the middle */
+    margin: 10px 0; 
 }
 
 .section-links a {
