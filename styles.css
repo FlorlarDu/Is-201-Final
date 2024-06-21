@@ -59,34 +59,11 @@ section {
     margin: 20px 0;
 }
 
-#gallery {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+a {
+    color: #e50914;
+    text-decoration: none;
 }
 
-#video {
-    margin-top: 20px;
-}
-
-#tableau {
-    margin-top: 20px;
-}
-
-ol {
-    list-style-type: decimal;
-    padding-left: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+a:hover {
+    text-decoration: underline;
 }
