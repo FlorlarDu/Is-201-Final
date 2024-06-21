@@ -9,6 +9,17 @@
         body {
             background-color: #1b1b1b;
         }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -44,8 +55,11 @@
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
-            <!-- Embedded image from provided URL -->
-            <img src="https://i.pinimg.com/564x/d6/7b/60/d67b60be9de559cb3810680d280082bc.jpg" alt="Sample Image">
+            <div class="image-gallery">
+                <img src="https://i.pinimg.com/564x/d6/7b/60/d67b60be9de559cb3810680d280082bc.jpg" alt="Sample Image 1">
+                <img src="https://i.pinimg.com/736x/24/10/fb/2410fb56291e923035d3e3eb3ce95e9e.jpg" alt="Sample Image 2">
+                <img src="https://i.pinimg.com/736x/a0/11/8e/a0118eb92a7c203386b604cf2f4a0266.jpg" alt="Sample Image 3">
+            </div>
         </section>
         <section id="video">
             <h2>Photography Video</h2>
