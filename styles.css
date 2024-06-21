@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0a2351;
+    background-color: #1b1b1b;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@ section {
 }
 
 #gallery {
-    background-color: #0a2351;
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
