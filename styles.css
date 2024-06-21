@@ -34,11 +34,15 @@ nav ul li a:hover {
     color: #e50914;
 }
 
+.red-bar {
+    background-color: #e50914;
+    height: 5px;
+    margin: 10px 0;
+}
+
 .section-links {
-    background-color: #2a2a2a;
-    padding: 10px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Less space between red bar and section links */
 }
 
 .section-links a {
