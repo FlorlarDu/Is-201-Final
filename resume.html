@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .section-bubble {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .section-bubble h2 {
+            color: #e50914;
+        }
+        nav ul li a {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,54 +27,42 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#awards">Awards and Honors</a></li>
                 <li><a href="scratch.html">Scratch Page</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="education">
+        <section id="education" class="section-bubble">
             <h2>Education</h2>
-            <p>
-                
-                Brigham Young University | Brigham Young University
-                Statistics | 2022 - 2025
-            </p>
-            <p>
-                
-                Chandler/Gilbert Community College | Chandler/Gilbert Community College
-                General Studies | Jan 2020 - Apr 2022
-            </p>
+            <ol>
+                <li>Brigham Young University | Statistics | 2022 - 2025</li>
+                <li>Chandler/Gilbert Community College | General Studies | Jan 2020 - Apr 2022</li>
+            </ol>
         </section>
-        <section id="work-experience">
+        <section id="work-experience" class="section-bubble">
             <h2>Work Experience</h2>
-            <p>
-                Accounting InternAccounting Intern
-                Bulwark Pest Control | Internship From Apr 2019 - Jun 2019 | Mesa, Arizona, United States | On-site
-            </p>
-            <p>
-                Inside Sales Assistant | Bulwark Pest Control | Internship From Jun 2023 - Aug 2023 | Mesa, Arizona, United States
-            </p>
+            <ol>
+                <li>Accounting Intern | Bulwark Pest Control | Internship From Apr 2019 - Jun 2019 | Mesa, Arizona, United States | On-site</li>
+                <li>Inside Sales Assistant | Bulwark Pest Control | Internship From Jun 2023 - Aug 2023 | Mesa, Arizona, United States</li>
+            </ol>
         </section>
-        <section id="skills">
+        <section id="skills" class="section-bubble">
             <h2>Skills</h2>
-            <p>
-                Statistics
-            </p>
-            <p>
-                Digital Marketing
-            </p>
-            <p>
-                Microsoft Excel
-            </p>
-
+            <ol>
+                <li>Statistics</li>
+                <li>Digital Marketing</li>
+                <li>Microsoft Excel</li>
+            </ol>
         </section>
-        <section id="awards">
+        <section id="awards" class="section-bubble">
             <h2>Awards and Honors</h2>
-            <p>
-                Egle Scout
-            </p>
-
+            <ol>
+                <li>Eagle Scout</li>
+            </ol>
         </section>
     </main>
     <footer>
